@@ -315,13 +315,29 @@ function CollectionView({ navigate }) {
 
 function CategoryGrid({ navigate, isCollectionPage }) {
   const categories = [
-    { key: "collarespiedra", label: "Collares de piedra", className: "item-1" },
-    { key: "accesorios", label: "Accesorios", className: "item-2" },
-    { key: "pulseras", label: "Pulseras", className: "item-3" },
+    {
+      key: "collarespiedra",
+      label: "Collares de piedra",
+      className: "item-1",
+      bg: "./img/collaramatista.png",
+    },
+    {
+      key: "accesorios",
+      label: "Accesorios",
+      className: "item-2",
+      bg: "./img/collarucarzo.png",
+    },
+    {
+      key: "pulseras",
+      label: "Pulseras",
+      className: "item-3",
+      bg: "./img/collarperla.png",
+    },
     {
       key: "tinylovers",
       label: isCollectionPage ? "Tiny Lovers" : "BOLSOS",
       className: "item-4",
+      bg: "./img/WhatsApp Image 2026-04-02 at 13.00.55.jpeg",
     },
   ];
 
@@ -331,6 +347,7 @@ function CategoryGrid({ navigate, isCollectionPage }) {
         <div key={cat.key} className={cat.className}>
           <a
             href={`#${cat.key}`}
+            style={{ backgroundImage: `url("${cat.bg}")` }}
             onClick={(e) => {
               e.preventDefault();
               navigate("categoria", cat.key);
