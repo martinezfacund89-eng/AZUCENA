@@ -296,7 +296,7 @@ body {
 .item-2 a,
 .item-3 a,
 .item-4 a {
-  background-image: url("/img/nos.png.png");
+  background-image: url("./img/nos.png.png");
 }
 
 /* =================================================
