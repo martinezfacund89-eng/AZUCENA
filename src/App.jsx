@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 const CATALOG_DATA = {
-  collarespiedra: {
-    title: "COLLARES DE PIEDRA",
+  collares: {
+    title: "COLLARES",
     items: [
-      { id: "collar-amatista", name: "COLLAR AMATISTA", price: 45000, img: "./img/collaramatista.png", detailId: "collar-amatista-gota" },
+      { id: "collar-amatista", name: "COLLAR INICIAL", price: 70000, img: "./img/41ffd429-c561-4c48-9f90-622ea53c8645.jpg", detailId: "collar-amatista-gota" },
       { id: "collar-cuarzo", name: "COLLAR CUARZO ROSA", price: 55000, img: "./img/collarucarzo.png", detailId: "collar-cuarzo-rosa" },
       { id: "collar-perla", name: "COLLAR PERLA", price: 60000, img: "./img/collarperla.png", detailId: "collar-perla-clasica" },
       { id: "collar-largo-1", name: "COLLAR LARGO", price: 75000, img: "./img/collarlargo.png", detailId: "collar-amatista-gota" },
@@ -14,7 +14,7 @@ const CATALOG_DATA = {
     ],
   },
   accesorios: {
-    title: "ACCESORIOS Y COLLARES",
+    title: "ACCESORIOS",
     items: [
       { id: "acc-amatista", name: "COLLAR AMATISTA", price: 45000, img: "./img/collaramatista.png", detailId: "collar-amatista-gota" },
       { id: "acc-cuarzo", name: "COLLAR CUARZO ROSA", price: 55000, img: "./img/collarucarzo.png", detailId: "collar-cuarzo-rosa" },
