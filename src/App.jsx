@@ -316,11 +316,11 @@ function CollectionView({ navigate }) {
 function CategoryGrid({ navigate, isCollectionPage }) {
   const categories = [
     {
-      key: "collarespiedra",
-      label: "Collares de piedra",
-      className: "item-1",
-      bg: "./img/collaramatista.png",
-    },
+  key: "collares",
+  label: "Collares",
+  className: "item-1",
+  bg: "./img/collaramatista.png",
+},
     {
       key: "accesorios",
       label: "Accesorios",
@@ -362,7 +362,7 @@ function CategoryGrid({ navigate, isCollectionPage }) {
 }
 
 function CategoryView({ categoryKey, navigate }) {
-  const category = CATALOG_DATA[categoryKey] || CATALOG_DATA.collarespiedra;
+  const category = CATALOG_DATA[categoryKey] || CATALOG_DATA.collares;
 
   return (
     <main className="catalogue-page">
